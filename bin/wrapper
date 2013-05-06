@@ -10,7 +10,7 @@ Usage `basename $0` -m <mode> [-i <master_ip>] [-c <concurrency> ] [-o <operatio
      - install : deploy the ssbench virtualenv
      - spawn_workers : start as much workers as CPU
        (use -i option to specify the remote master)
-     - kill_worker : stop all current workers on local host
+     - kill_workers : stop all current workers on local host
      - rampup : start the rampup evaluation
        (use -o option to specify the amount of operation to perform)
      - bench : start the bench evaluation
@@ -42,6 +42,7 @@ EOF
     usage
 }
 
+TAG="0.2.13"
 RAMPUPCSVDIR=/tmp/csvrampup
 ETH=eth0
 SSDESTDIR=$WORKSPACE/ssbench-venv
@@ -98,7 +99,7 @@ install_ssbench() {
     . bin/activate
     pip install --upgrade distribute
     pip install Cython gevent pyzmq==2.2.0
-    pip install ssbench
+    pip install ssbench==$TAG
     pip install python-keystoneclient
     pip install python-swiftclient
     [ ! -x bin/ssbench-master ] && {
