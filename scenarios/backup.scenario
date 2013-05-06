@@ -1,0 +1,25 @@
+{
+  "name": "Backup Scenario",
+  "sizes": [{
+    "name": "Small files",
+    "size_min": 1024,
+    "size_max": 1048576
+  }, {
+    "name": "Medium files",
+    "size_min": 1048576,
+    "size_max": 52428800
+  }, {
+    "name": "Large files",
+    "size_min": 52428800,
+    "size_max": 524288000
+  }],
+  "initial_files": {
+    "Small files": 4,
+    "Medium files": 5,
+    "Large files": 1
+  },
+  "container_count": 10,
+  "operation_count": 50,
+  "crud_profile": [85, 7, 1, 7],
+  "user_count": 5
+}

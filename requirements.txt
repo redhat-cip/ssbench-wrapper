@@ -1,0 +1,7 @@
+python-virtualenv
+msgpack-python
+python-dev
+python-pip
+g++
+libzmq-dev
+libevent-dev

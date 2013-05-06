@@ -1,0 +1,15 @@
+{
+  "name": "Rampup Scenario",
+  "sizes": [{
+    "name": "Ultra small files",
+    "size_min": 512,
+    "size_max": 10240
+  }],
+  "initial_files": {
+    "Ultra small files": 1000
+  },
+  "container_count": 100,
+  "operation_count": 5000,
+  "crud_profile": [25, 25, 25, 25],
+  "user_count": 1
+}

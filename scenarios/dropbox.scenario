@@ -1,0 +1,25 @@
+{
+  "name": "DropBox Scenario",
+  "sizes": [{
+    "name": "Medium files",
+    "size_min": 1048536,
+    "size_max": 10485760
+  }, {
+    "name": "Large files",
+    "size_min": 10485760,
+    "size_max": 62914560
+  }, {
+    "name": "Very large files",
+    "size_min": 62914560,
+    "size_max": 734003200
+  }],
+  "initial_files": {
+    "Medium files": 4,
+    "Large files": 4,
+    "Very large files": 2
+  },
+  "container_count": 10,
+  "operation_count": 50,
+  "crud_profile": [10, 40, 40, 10],
+  "user_count": 5
+}

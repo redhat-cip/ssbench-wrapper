@@ -1,0 +1,15 @@
+{
+  "name": "Pur create scenario",
+  "sizes": [{
+    "name": "Small files",
+    "size_min": 1024,
+    "size_max": 1024
+  }],
+  "initial_files": {
+    "Small files": 100
+  },
+  "container_count": 10,
+  "operation_count": 5000,
+  "crud_profile": [100, 0, 0, 0],
+  "user_count": 20
+}
