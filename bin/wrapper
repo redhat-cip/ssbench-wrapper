@@ -139,7 +139,7 @@ get_extract_token() {
         e=[e for e in t['access']['serviceCatalog'] if e['name'] == 'swift']; \
         print e[0]['endpoints'][0]['publicURL']" $TDIR/token > $TDIR/swift_endpoint
     # ssbench fails to resolv hostname (strange behaviour) so manually set ip of cw-vip-swift
-    sed -i 's/cw-vip-swift.enovance.com/10.68.0.152/' $TDIR/swift_endpoint
+    #sed -i 's/cw-vip-swift.enovance.com/10.68.0.152/' $TDIR/swift_endpoint
     [ "`wc -l $TDIR/tokenid | cut -d' ' -f1`" = 1 ] && \
     [ "`wc -l $TDIR/swift_endpoint | cut -d' ' -f1`" = 1 ]
 }
