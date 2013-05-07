@@ -11,7 +11,7 @@ wrapper installation
 --------------------
 
 The installation command will setup a python virtualenv and install
-a specific ssbench tag. 
+a specific ssbench tag:
 
  ubuntu@client3:~/ssbench-wrapper$ sudo aptitude install `cat requirements.txt`
  ubuntu@client3:~/ssbench-wrapper$ pwd
