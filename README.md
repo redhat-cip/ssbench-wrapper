@@ -42,10 +42,13 @@ Basic scenarios (operations on 1KB object):
  * pread : a READ only operation benchmark
  * pupdate : a POST only operation benchmark
  * pdelete : a DELETE only operation benchmark
+
 More complex scenario:
  * webserver : a typical usage of swift as webserser content backend
  * dropbox : a typical usage of swift for a dropbox like usage
  * backup : a typical usage of swift as backup server
+
+Start the bench:
 
     ubuntu@client3:~/ssbench-wrapper$ WORKSPACE=/home/ubuntu/ CHECKOUTDIR=ssbench-wrapper TENANT=demo USERNAME=demo PASSWORD=wxcvbn
     KEYSTONE_ENDPOINT=http://10.43.0.54:5000/v2.0 SCENARIOS="pcreate" bin/wrapper -m bench -c 5
