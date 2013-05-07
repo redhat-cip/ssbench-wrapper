@@ -165,7 +165,7 @@ spawn_workers() {
         }
         cd $SSDESTDIR
         . bin/activate
-        bin/ssbench-worker --concurency 16 \
+        bin/ssbench-worker --concurrency 16 \
                            --zmq-host $master_ip ${pre}${wid} > /dev/null 2>&1 &
         echo "Worker $wid has been spawned [$!]"
         deactivate
