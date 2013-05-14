@@ -58,6 +58,8 @@ EOF
     usage
 }
 
+[ -z "$WORKCONC" ] && WORKCONC=16
+
 TAG="0.2.13"
 RAMPUPCSVDIR=/tmp/csvrampup
 ETH=eth0
@@ -165,7 +167,7 @@ spawn_workers() {
         }
         cd $SSDESTDIR
         . bin/activate
-        bin/ssbench-worker --concurrency 16 \
+        bin/ssbench-worker --concurrency $WORKCONC \
                            --zmq-host $master_ip ${pre}${wid} > /dev/null 2>&1 &
         echo "Worker $wid has been spawned [$!]"
         deactivate
