@@ -1,12 +1,12 @@
 {
   "name": "Pur update scenario",
   "sizes": [{
-    "name": "Small files",
-    "size_min": 512,
-    "size_max": 10240
+    "name": "Small files (12K)",
+    "size_min": 12288,
+    "size_max": 12288
   }],
   "initial_files": {
-    "Small files": 100
+    "Small files (12K)": 100
   },
   "container_count": 10,
   "operation_count": 5000,
