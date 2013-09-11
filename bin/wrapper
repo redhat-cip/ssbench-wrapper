@@ -214,7 +214,7 @@ start_bench() {
         } || {
             bin/ssbench-master run-scenario --os-tenant-name=$TENANT \
                 --os-username=$TUSER --os-password=$PASSWORD \
-                --os-auth-url=$KEYSTONE_ENDPOINT \ 
+                --os-auth-url=$KEYSTONE_ENDPOINT \
                 -f $spath \
                 -u $concurrency -s $TDIR/${name}.stat
         }
